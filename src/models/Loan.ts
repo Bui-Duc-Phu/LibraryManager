@@ -7,7 +7,6 @@ export class Loan {
     private _status!: 'borrowed' | 'returned' | 'late'; // Trạng thái mượn
     
     constructor(
-
       id?: number,
       userId?: number,
       bookId?: number,
@@ -97,17 +96,10 @@ export class Loan {
       }
       this._status = status;
     }
-    
-    // Public method to update status
-    public updateStatus(newStatus: 'borrowed' | 'returned' | 'late'): void {
-      this.setStatus(newStatus);
-    }
-    
-    // Method to check if loan is late
-    public isLate(): boolean {
-      return this._status === 'late' || (
-        this._status === 'borrowed' && 
-        new Date() > this._returnDate
-      );
+
+  
+    // Method to compare userId and bookId
+    public compareIds(userId: number, bookId: number): boolean {
+      return this._userId === userId && this._bookId === bookId;
     }
   }

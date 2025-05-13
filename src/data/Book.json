@@ -130,5 +130,17 @@
     "location": "Shelf E2",
     "description": "A story about friendship, betrayal, and redemption in Afghanistan",
     "id": 11
+  },
+  {
+    "title": "de men ky",
+    "author": "lao hac",
+    "publisher": "bui nduc phu",
+    "publishYear": 2002,
+    "isbn": "2032323",
+    "category": "Psychology - Life Skills",
+    "quantity": 200,
+    "location": "ke so 3",
+    "description": "truyen vui",
+    "id": 12
   }
 ]

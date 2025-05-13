@@ -1,17 +1,46 @@
 [
   {
-    "id": 1,
-    "userId": 2,
-    "bookId": 2,
-    "borrowDate": "2002-01-21T17:00:00.000Z",
-    "returnDate": "2002-02-21T17:00:00.000Z",
-    "status": "returned"
+    "_id": 1,
+    "_userId": 2,
+    "_bookId": 3,
+    "_borrowDate": "2002-02-21T17:00:00.000Z",
+    "_returnDate": "2002-03-21T17:00:00.000Z",
+    "_status": "borrowed"
   },
   {
-    "userId": 3,
-    "bookId": 2,
-    "borrowDate": "2002-02-21T17:00:00.xs000Z",
-    "returnDate": "2002-03-21T17:00:00.000Z",
-    "status": "returned"
+    "_userId": 3,
+    "_bookId": 2,
+    "_borrowDate": "2003-02-21T17:00:00.000Z",
+    "_returnDate": "2004-02-21T17:00:00.000Z",
+    "_status": "borrowed"
+  },
+  {
+    "_userId": 5,
+    "_bookId": 5,
+    "_borrowDate": "1002-03-21T16:53:30.000Z",
+    "_returnDate": "2003-02-10T17:00:00.000Z",
+    "_status": "returned"
+  },
+  {
+    "_userId": 4,
+    "_bookId": 4,
+    "_borrowDate": "2002-03-21T17:00:00.000Z",
+    "_returnDate": "2002-04-21T17:00:00.000Z",
+    "_status": "returned"
+  },
+  {
+    "_userId": 3,
+    "_bookId": 3,
+    "_borrowDate": "2002-02-21T17:00:00.000Z",
+    "_returnDate": "2002-02-22T17:00:00.000Z",
+    "_status": "borrowed"
+  },
+  {
+    "_id": 2,
+    "_userId": 6,
+    "_bookId": 6,
+    "_borrowDate": "2002-02-21T17:00:00.000Z",
+    "_returnDate": "2002-02-22T17:00:00.000Z",
+    "_status": "borrowed"
   }
 ]

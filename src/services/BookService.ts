@@ -21,10 +21,13 @@ export class BookService {
     }
     
 
-    public static isBookExists(id: number, isbn: string): boolean {
-        const books = readFileJSON<Book>(MyPaths.DATA_DIR,MyPaths.BOOK_FILE);
-        return books.some(book => book.id === id || book.isbn === isbn);
+    public static isBookExists(id: number, isbn?: string): boolean {
+        const books = readFileJSON<Book>(MyPaths.DATA_DIR, MyPaths.BOOK_FILE);
+        return books.some(book =>
+            book.id === id || (isbn !== undefined && book.isbn === isbn)
+        );
     }
+    
 
     public static getBooks(): any {
         const books = readFileJSON<Book>(MyPaths.DATA_DIR,MyPaths.BOOK_FILE);

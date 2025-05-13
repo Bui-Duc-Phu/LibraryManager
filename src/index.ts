@@ -1,22 +1,22 @@
 import { User } from "./models/User";
 
 
-import * as readlineSync from 'readline-sync';
 import { UserService } from "./services/UserService";
 import { Book, BookCategory } from "./models/Book";
 import { BookService } from "./services/BookService";
 import { Loan } from "./models/Loan";
 import { LoanService } from "./services/LoanService";
+import { askNonEmpty } from "./Utils/askNonEmptyQuestion";
 
 
 
 
 
 function addUser(){
-    const fullName = readlineSync.question("Nhập tên người dùng: ");
-    const email = readlineSync.question("Nhập email: ");
-    const phone = readlineSync.question("Nhập số điện thoại: ");
-    const address = readlineSync.question("Nhập địa chỉ: ");
+    const fullName = askNonEmpty("Nhập tên người dùng: ", "string") as string;
+    const email = askNonEmpty("Nhập email: ", "string",true) as string;
+    const phone = askNonEmpty("Nhập số điện thoại: ", "string") as string;
+    const address = askNonEmpty("Nhập địa chỉ: ", "string") as string;
     
     const user = new User({
         fullName: fullName,
@@ -44,11 +44,11 @@ function showAllUser(){
 }
 
 function addBook(){
-    const title = readlineSync.question("Nhập tên sách: ");
-    const author = readlineSync.question("Nhập tên tác giả: ");
-    const publisher = readlineSync.question("Nhập tên nhà xuất bản: ");
-    const publishYear = readlineSync.question("Nhập năm xuất bản: ");
-    const isbn = readlineSync.question("Nhập mã ISBN: ");
+    const title = askNonEmpty("Nhập tên sách: ", "string") as string;
+    const author = askNonEmpty("Nhập tên tác giả: ", "string") as string;
+    const publisher = askNonEmpty("Nhập tên nhà xuất bản: ", "string") as string;
+    const publishYear = askNonEmpty("Nhập năm xuất bản: ", "number") as number;
+    const isbn = askNonEmpty("Nhập mã ISBN: ", "string") as string;
     
     // Hiển thị các thể loại sách có sẵn
     console.log("\nCác thể loại sách có sẵn:");
@@ -56,22 +56,22 @@ function addBook(){
         console.log(`${index + 1}. ${category}`);
     });
     
-    const categoryChoice = readlineSync.question("Chọn số thứ tự thể loại sách: ");
-    const categoryIndex = parseInt(categoryChoice) - 1;
+    const categoryChoice = askNonEmpty("Chọn số thứ tự thể loại sách: ", "number") as number;
+    const categoryIndex = categoryChoice - 1;
     const selectedCategory = Object.values(BookCategory)[categoryIndex];
     
-    const quantity = readlineSync.question("Nhập số lượng: ");
-    const location = readlineSync.question("Nhập vị trí: ");
-    const description = readlineSync.question("Nhập mô tả: ");
+    const quantity = askNonEmpty("Nhập số lượng: ", "number") as number;
+    const location = askNonEmpty("Nhập vị trí: ", "string") as string;
+    const description = askNonEmpty("Nhập mô tả: ", "string") as string;
     
     const newBook = new Book({
         title: title,
         author: author,
         publisher: publisher,
-        publishYear: parseInt(publishYear),
+        publishYear: publishYear,
         isbn: isbn,
         category: selectedCategory,
-        quantity: parseInt(quantity),
+        quantity: quantity,
         location: location,
         description: description
     });
@@ -100,16 +100,16 @@ function showAllBook(){
 
 function borrowBook(){
     showAllBook()
-    const bookId = readlineSync.question("Nhập mã sách: ");
+    const bookId = askNonEmpty("Nhập mã sách: ", "number") as number;
     showAllUser();
-    const userId = readlineSync.question("Nhập mã người dùng: ");
-    const borrowDate = readlineSync.question("Nhập ngày mượn: ");
-    const returnDate = readlineSync.question("Nhập ngày trả: ");
+    const userId = askNonEmpty("Nhập mã người dùng: ", "number") as number;
+    const borrowDate = askNonEmpty("Nhập ngày mượn: ", "string") as string;
+    const returnDate = askNonEmpty("Nhập ngày trả: ", "string") as string;
 
     const loan = new Loan(
         undefined,
-        parseInt(bookId),
-        parseInt(userId),
+        bookId,
+        userId,
         new Date(borrowDate.split('/').reverse().join('-')),
         new Date(returnDate.split('/').reverse().join('-')),
         'borrowed'
@@ -122,15 +122,12 @@ function borrowBook(){
 
 function returnBook(){
     showAllBook();
-    const bookId = readlineSync.question("Nhập id sách: ");
-    const userId = readlineSync.question("Nhập id người dùng: ");
-
-    try {
-        LoanService.updateLoanStatus(parseInt(userId),parseInt(bookId), 'returned');
-        console.log("Trả sách thành công\n");
-    } catch (error: any) {
-        console.log(error.message);
-    }
+    const bookId = askNonEmpty("Nhập id sách: ", "number") as number;
+    const userId = askNonEmpty("Nhập id người dùng: ", "number") as number;
+    
+    LoanService.updateLoanStatus(userId, bookId, 'returned');
+    console.log("Trả sách thành công\n");
+    
 }
 
 function showAllLoan(){
@@ -150,7 +147,7 @@ function main() {
         console.log("6. Trả Sách");
         console.log("7. Hiển thị phiếu mượn sách");
         console.log("0. Thoát");
-        const choice = readlineSync.question("Nhập lựa chọn: ");
+        const choice = askNonEmpty("Nhập lựa chọn: ", "string") as string;
         switch (choice) {
             case "0":
                 console.log("Thoát chương trình");

@@ -23,10 +23,6 @@ function readFileJSON<T>(dirPath:string,filePath:string): T[] {
     return JSON.parse(data);
 }
 
-function addDataOnFileJSON(data:any,dirPath:string,filePath:string):void{
-
-    
-}
 
 
 export {writeFileJSON,readFileJSON};
