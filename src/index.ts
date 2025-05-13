@@ -96,6 +96,8 @@ function showAllBook(){
     console.log("\n");
 }
 
+
+
 function borrowBook(){
     showAllBook()
     const bookId = readlineSync.question("Nhập mã sách: ");
@@ -114,9 +116,28 @@ function borrowBook(){
     );
 
     LoanService.addLoan(loan)
-    console.log("Mượn sách thành công");
+    console.log("Mượn sách thành công\n");
 }
 
+
+function returnBook(){
+    showAllBook();
+    const bookId = readlineSync.question("Nhập id sách: ");
+    const userId = readlineSync.question("Nhập id người dùng: ");
+
+    try {
+        LoanService.updateLoanStatus(parseInt(userId),parseInt(bookId), 'returned');
+        console.log("Trả sách thành công\n");
+    } catch (error: any) {
+        console.log(error.message);
+    }
+}
+
+function showAllLoan(){
+    const loans = LoanService.getLoans();
+    console.table(loans);
+    console.log("\n");
+}
 
 function main() {
 
@@ -126,6 +147,8 @@ function main() {
         console.log("3. addBook");
         console.log("4. show All Book");
         console.log("5. Mượn Sách");
+        console.log("6. Trả Sách");
+        console.log("7. Hiển thị phiếu mượn sách");
         console.log("0. Thoát");
         const choice = readlineSync.question("Nhập lựa chọn: ");
         switch (choice) {
@@ -148,6 +171,12 @@ function main() {
             case "5":
                 borrowBook();
                 break;
+            case "6":
+                returnBook();
+                break;
+            case "7":
+                showAllLoan();
+                break;
             default:
                 console.log("Lựa chọn không hợp lệ");
                 break;
@@ -157,13 +186,5 @@ function main() {
 }
 
 main();
-
-// const books = [
-//     { id: 1, name: 'Harry Potter', author: 'J.K. Rowling' },
-//     { id: 2, name: 'Dế Mèn Phiêu Lưu Ký', author: 'Tô Hoài' },
-//     { id: 3, name: 'Lão Hạc', author: 'Nam Cao' }
-// ];
-
-// console.table(books);
 
 
