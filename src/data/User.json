@@ -1,229 +1,92 @@
 [
   {
-    "fullName": "Trần Minh Anh",
-    "dob": "1995-06-15T00:00:00.000Z",
-    "email": "tranminhanh@gmail.com",
-    "phone": "0987654321",
-    "address": "45 Nguyễn Huệ, Quận 1, TP.HCM",
-    "id": 1,
-    "createdAt": "2024-03-15T08:30:00.000Z",
-    "status": "active"
-  },
-  {
-    "fullName": "Lê Văn Bình",
-    "dob": "1988-03-22T00:00:00.000Z",
-    "email": "levanbinh@yahoo.com",
-    "phone": "0912345678",
-    "address": "78 Lê Lợi, Quận 3, TP.HCM",
-    "id": 2,
-    "createdAt": "2024-03-15T09:15:00.000Z",
-    "status": "active"
-  },
-  {
-    "fullName": "Phạm Thị Hương",
-    "dob": "1992-11-08T00:00:00.000Z",
-    "email": "phamthihuong@gmail.com",
-    "phone": "0978123456",
-    "address": "123 Đồng Khởi, Quận 1, TP.HCM",
-    "id": 3,
-    "createdAt": "2024-03-15T10:00:00.000Z",
-    "status": "active"
-  },
-  {
-    "fullName": "Nguyễn Hoàng Minh",
-    "dob": "1990-07-30T00:00:00.000Z",
-    "email": "nguyenhoangminh@gmail.com",
-    "phone": "0967891234",
-    "address": "56 Nguyễn Du, Quận 1, TP.HCM",
-    "id": 4,
-    "createdAt": "2024-03-15T10:45:00.000Z",
-    "status": "active"
-  },
-  {
-    "fullName": "Trần Thị Mai",
-    "dob": "1994-04-12T00:00:00.000Z",
-    "email": "tranthimai@yahoo.com",
-    "phone": "0934567891",
-    "address": "89 Lê Duẩn, Quận 1, TP.HCM",
-    "id": 5,
-    "createdAt": "2024-03-15T11:30:00.000Z",
-    "status": "active"
-  },
-  {
-    "fullName": "Lê Văn Cường",
-    "dob": "1987-09-25T00:00:00.000Z",
-    "email": "levancuong@gmail.com",
-    "phone": "0945678912",
-    "address": "34 Nguyễn Thị Minh Khai, Quận 3, TP.HCM",
-    "id": 6,
-    "createdAt": "2024-03-15T12:15:00.000Z",
-    "status": "active"
-  },
-  {
-    "fullName": "Hoàng Thị Lan",
-    "dob": "1993-02-18T00:00:00.000Z",
-    "email": "hoangthilan@yahoo.com",
-    "phone": "0956789123",
-    "address": "67 Điện Biên Phủ, Quận 3, TP.HCM",
-    "id": 7,
-    "createdAt": "2024-03-15T13:00:00.000Z",
-    "status": "active"
-  },
-  {
-    "fullName": "Vũ Minh Tuấn",
-    "dob": "1991-12-05T00:00:00.000Z",
-    "email": "vuminhtuan@gmail.com",
-    "phone": "0923456789",
-    "address": "45 Võ Văn Tần, Quận 3, TP.HCM",
-    "id": 8,
-    "createdAt": "2024-03-15T13:45:00.000Z",
-    "status": "active"
-  },
-  {
-    "fullName": "Đỗ Thị Hà",
-    "dob": "1996-08-20T00:00:00.000Z",
-    "email": "dothiha@yahoo.com",
-    "phone": "0912345678",
-    "address": "78 Nguyễn Đình Chiểu, Quận 3, TP.HCM",
-    "id": 9,
-    "createdAt": "2024-03-15T14:30:00.000Z",
-    "status": "active"
-  },
-  {
-    "fullName": "Nguyễn Văn Dũng",
-    "dob": "1989-05-14T00:00:00.000Z",
-    "email": "nguyenvandung@gmail.com",
-    "phone": "0987654321",
-    "address": "23 Lý Tự Trọng, Quận 1, TP.HCM",
-    "id": 10,
-    "createdAt": "2024-03-15T15:15:00.000Z",
-    "status": "active"
-  },
-  {
-    "fullName": "Trần Thị Thảo",
-    "dob": "1994-10-28T00:00:00.000Z",
-    "email": "tranthithao@yahoo.com",
-    "phone": "0978123456",
-    "address": "56 Nguyễn Huệ, Quận 1, TP.HCM",
-    "id": 11,
-    "createdAt": "2024-03-15T16:00:00.000Z",
-    "status": "active"
-  },
-  {
-    "fullName": "Lê Hoàng Nam",
-    "dob": "1992-03-17T00:00:00.000Z",
-    "email": "lehoangnam@gmail.com",
-    "phone": "0967891234",
-    "address": "89 Đồng Khởi, Quận 1, TP.HCM",
-    "id": 12,
-    "createdAt": "2024-03-15T16:45:00.000Z",
-    "status": "active"
-  },
-  {
-    "fullName": "Phạm Thị Linh",
-    "dob": "1995-07-22T00:00:00.000Z",
-    "email": "phamthilinh@yahoo.com",
-    "phone": "0934567891",
-    "address": "34 Lê Lợi, Quận 1, TP.HCM",
-    "id": 13,
-    "createdAt": "2024-03-15T17:30:00.000Z",
-    "status": "active"
-  },
-  {
-    "fullName": "Hoàng Văn Phúc",
-    "dob": "1990-01-30T00:00:00.000Z",
-    "email": "hoangvanphuc@gmail.com",
-    "phone": "0945678912",
-    "address": "67 Nguyễn Du, Quận 1, TP.HCM",
-    "id": 14,
-    "createdAt": "2024-03-15T18:15:00.000Z",
-    "status": "active"
-  },
-  {
-    "fullName": "Vũ Thị Hương",
-    "dob": "1993-09-08T00:00:00.000Z",
-    "email": "vuthihuong@yahoo.com",
-    "phone": "0956789123",
-    "address": "45 Lê Duẩn, Quận 1, TP.HCM",
-    "id": 15,
-    "createdAt": "2024-03-15T19:00:00.000Z",
-    "status": "active"
-  },
-  {
-    "fullName": "Đỗ Minh Khôi",
-    "dob": "1991-04-25T00:00:00.000Z",
-    "email": "dominhtuan@gmail.com",
-    "phone": "0923456789",
-    "address": "78 Nguyễn Thị Minh Khai, Quận 3, TP.HCM",
-    "id": 16,
-    "createdAt": "2024-03-15T19:45:00.000Z",
-    "status": "active"
-  },
-  {
-    "fullName": "Nguyễn Thị Ngọc",
-    "dob": "1996-12-15T00:00:00.000Z",
-    "email": "nguyenthingoc@yahoo.com",
-    "phone": "0912345678",
-    "address": "23 Điện Biên Phủ, Quận 3, TP.HCM",
-    "id": 17,
-    "createdAt": "2024-03-15T20:30:00.000Z",
-    "status": "active"
-  },
-  {
-    "fullName": "Trần Văn Hải",
-    "dob": "1988-06-20T00:00:00.000Z",
-    "email": "tranvanhai@gmail.com",
-    "phone": "0987654321",
-    "address": "56 Võ Văn Tần, Quận 3, TP.HCM",
-    "id": 18,
-    "createdAt": "2024-03-15T21:15:00.000Z",
-    "status": "active"
-  },
-  {
-    "fullName": "Lê Thị Minh",
-    "dob": "1994-02-28T00:00:00.000Z",
-    "email": "lethiminh@yahoo.com",
-    "phone": "0978123456",
-    "address": "89 Nguyễn Đình Chiểu, Quận 3, TP.HCM",
-    "id": 19,
-    "createdAt": "2024-03-15T22:00:00.000Z",
-    "status": "active"
-  },
-  {
-    "fullName": "Phạm Văn Thành",
-    "dob": "1992-11-10T00:00:00.000Z",
-    "email": "phamvanthanh@gmail.com",
-    "phone": "0967891234",
-    "address": "34 Lý Tự Trọng, Quận 1, TP.HCM",
-    "id": 20,
-    "createdAt": "2024-03-15T22:45:00.000Z",
-    "status": "active"
-  },
-  {
-    "fullName": "Nguyen Van A",
-    "dob": "1990-01-01T00:00:00.000Z",
-    "email": "nguyenvana@example.com",
-    "phone": "0123456789",
-    "address": "123 Street, City",
-    "id": 21,
-    "status": "active"
-  },
-  {
-    "fullName": "Nguyen Van A",
+    "fullName": "Elon Musk",
     "contact": [
-      "nguyenvana@example.com",
-      "123 Street",
-      987567503
+      "elon@tesla.com",
+      "Austin, Texas",
+      "+1-555-0123"
     ],
-    "id": 22
+    "id": 1
   },
   {
-    "fullName": "Nguyen Van bb",
+    "fullName": "Bill Gates",
     "contact": [
-      "nguyenvana@example.com",
-      "123 Street",
-      "09743826577"
+      "bill@microsoft.com",
+      "Seattle, Washington",
+      "+1-555-0124"
     ],
-    "id": 23
+    "id": 2
+  },
+  {
+    "fullName": "Mark Zuckerberg",
+    "contact": [
+      "mark@meta.com",
+      "Palo Alto, California",
+      "+1-555-0125"
+    ],
+    "id": 3
+  },
+  {
+    "fullName": "Jeff Bezos",
+    "contact": [
+      "jeff@amazon.com",
+      "Seattle, Washington",
+      "+1-555-0126"
+    ],
+    "id": 4
+  },
+  {
+    "fullName": "Tim Cook",
+    "contact": [
+      "tim@apple.com",
+      "Cupertino, California",
+      "+1-555-0127"
+    ],
+    "id": 5
+  },
+  {
+    "fullName": "Satya Nadella",
+    "contact": [
+      "satya@microsoft.com",
+      "Redmond, Washington",
+      "+1-555-0128"
+    ],
+    "id": 6
+  },
+  {
+    "fullName": "Sundar Pichai",
+    "contact": [
+      "sundar@google.com",
+      "Mountain View, California",
+      "+1-555-0129"
+    ],
+    "id": 7
+  },
+  {
+    "fullName": "Jensen Huang",
+    "contact": [
+      "jensen@nvidia.com",
+      "Santa Clara, California",
+      "+1-555-0130"
+    ],
+    "id": 8
+  },
+  {
+    "fullName": "Reed Hastings",
+    "contact": [
+      "reed@netflix.com",
+      "Los Gatos, California",
+      "+1-555-0131"
+    ],
+    "id": 9
+  },
+  {
+    "fullName": "Andy Jassy",
+    "contact": [
+      "andy@amazon.com",
+      "Seattle, Washington",
+      "+1-555-0132"
+    ],
+    "id": 10
   }
 ]

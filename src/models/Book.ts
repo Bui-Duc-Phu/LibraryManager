@@ -1,14 +1,14 @@
 export enum BookCategory {
-    VAN_HOC = 'Văn học',
-    KINH_TE = 'Kinh tế',
-    TAM_LY = 'Tâm lý - Kỹ năng sống',
-    GIAO_KHOA = 'Giáo khoa - Tham khảo',
-    NGOAI_NGU = 'Ngoại ngữ',
-    CONG_NGHE = 'Công nghệ thông tin',
-    LICH_SU = 'Lịch sử',
-    KHOA_HOC = 'Khoa học - Kỹ thuật',
-    VAN_HOA = 'Văn hóa - Nghệ thuật',
-    KHAC = 'Khác'
+    LITERATURE = 'Literature',
+    ECONOMY = 'Economy',
+    PSYCHOLOGY = 'Psychology - Life Skills',
+    TEXTBOOK = 'Textbooks - References',
+    FOREIGN_LANGUAGE = 'Foreign Language',
+    INFORMATION_TECHNOLOGY = 'Information Technology',
+    HISTORY = 'History',
+    SCIENCE = 'Science - Engineering',
+    CULTURE = 'Culture - Arts',
+    OTHERS = 'Others'
 }
 
 

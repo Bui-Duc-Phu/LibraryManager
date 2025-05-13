@@ -1,1 +1,134 @@
-[]
+[
+  {
+    "title": "dsd",
+    "author": "sdsa",
+    "publisher": "sdsad",
+    "publishYear": 323,
+    "isbn": "232323",
+    "category": "Economy",
+    "quantity": 32,
+    "location": "đá",
+    "description": "",
+    "id": 1
+  },
+  {
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "publisher": "Grand Central Publishing",
+    "publishYear": 1960,
+    "isbn": "9780446310789",
+    "category": "Fiction",
+    "quantity": 15,
+    "location": "Shelf A1",
+    "description": "A classic novel about racial injustice and moral growth in the American South",
+    "id": 2
+  },
+  {
+    "title": "1984",
+    "author": "George Orwell",
+    "publisher": "Signet Classic",
+    "publishYear": 1949,
+    "isbn": "9780451524935",
+    "category": "Science Fiction",
+    "quantity": 20,
+    "location": "Shelf B2",
+    "description": "A dystopian novel set in a totalitarian society",
+    "id": 3
+  },
+  {
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "publisher": "Scribner",
+    "publishYear": 1925,
+    "isbn": "9780743273565",
+    "category": "Fiction",
+    "quantity": 18,
+    "location": "Shelf A3",
+    "description": "A novel about the American Dream and the Jazz Age",
+    "id": 4
+  },
+  {
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "publisher": "Penguin Classics",
+    "publishYear": 1813,
+    "isbn": "9780141439518",
+    "category": "Romance",
+    "quantity": 12,
+    "location": "Shelf C1",
+    "description": "A romantic novel about the Bennet family and their daughters' marriages",
+    "id": 5
+  },
+  {
+    "title": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "publisher": "Little, Brown and Company",
+    "publishYear": 1951,
+    "isbn": "9780316769488",
+    "category": "Fiction",
+    "quantity": 10,
+    "location": "Shelf B3",
+    "description": "A coming-of-age story about teenage alienation and loss of innocence",
+    "id": 6
+  },
+  {
+    "title": "The Lord of the Rings",
+    "author": "J.R.R. Tolkien",
+    "publisher": "Mariner Books",
+    "publishYear": 1954,
+    "isbn": "9780544003415",
+    "category": "Fantasy",
+    "quantity": 25,
+    "location": "Shelf D1",
+    "description": "An epic high-fantasy novel about the quest to destroy the One Ring",
+    "id": 7
+  },
+  {
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "publisher": "HarperOne",
+    "publishYear": 1988,
+    "isbn": "9780062315007",
+    "category": "Fiction",
+    "quantity": 15,
+    "location": "Shelf C2",
+    "description": "A philosophical novel about following one's dreams",
+    "id": 8
+  },
+  {
+    "title": "The Little Prince",
+    "author": "Antoine de Saint-Exupéry",
+    "publisher": "Mariner Books",
+    "publishYear": 1943,
+    "isbn": "9780156013987",
+    "category": "Children's Literature",
+    "quantity": 20,
+    "location": "Shelf E1",
+    "description": "A poetic tale about a young prince who visits various planets",
+    "id": 9
+  },
+  {
+    "title": "The Da Vinci Code",
+    "author": "Dan Brown",
+    "publisher": "Anchor",
+    "publishYear": 2003,
+    "isbn": "9780307474278",
+    "category": "Thriller",
+    "quantity": 22,
+    "location": "Shelf D2",
+    "description": "A mystery thriller novel about a murder in the Louvre Museum",
+    "id": 10
+  },
+  {
+    "title": "The Kite Runner",
+    "author": "Khaled Hosseini",
+    "publisher": "Riverhead Books",
+    "publishYear": 2003,
+    "isbn": "9781594631931",
+    "category": "Fiction",
+    "quantity": 16,
+    "location": "Shelf E2",
+    "description": "A story about friendship, betrayal, and redemption in Afghanistan",
+    "id": 11
+  }
+]

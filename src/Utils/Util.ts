@@ -1,6 +1,6 @@
 import fs from 'fs';
 
-function writeFileJson(data:any,dirPath:string,filePath:string):void{
+function writeFileJSON(data:any,dirPath:string,filePath:string):void{
     // check if the directory exists
     if (!fs.existsSync(dirPath)) {
         fs.mkdirSync(dirPath, { recursive: true });
@@ -10,18 +10,23 @@ function writeFileJson(data:any,dirPath:string,filePath:string):void{
 }
 
 
-function readFileJson<T>(dirPath:string,filePath:string): T[] {
+function readFileJSON<T>(dirPath:string,filePath:string): T[] {
  
     if (!fs.existsSync(dirPath)) {
         fs.mkdirSync(dirPath, { recursive: true });
     }
 
     if (!fs.existsSync(filePath)) {
-        return [];
+        return [] as T[];
     }
     const data = fs.readFileSync(filePath, 'utf-8');
     return JSON.parse(data);
 }
 
+function addDataOnFileJSON(data:any,dirPath:string,filePath:string):void{
 
-export {writeFileJson,readFileJson};
+    
+}
+
+
+export {writeFileJSON,readFileJSON};

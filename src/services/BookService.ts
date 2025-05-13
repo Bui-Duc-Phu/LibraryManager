@@ -1,22 +1,39 @@
 import path from 'path';
 import { Book } from '../models/Book';
-import { readFileJson ,writeFileJson} from '../Utils/Util';
+import { readFileJSON ,writeFileJSON} from '../Utils/Util';
+import { MyPaths } from '../Utils/MyPaths';
 
 
 export class BookService {
  
-    private static readonly DATA_DIR = path.join(process.cwd(), 'src', 'data');
-    private static readonly BOOK_FILE = path.join(BookService.DATA_DIR, 'Book.json');
-
-
-
-
     public static addBook(book: Book): Book {
-        const books = readFileJson<Book>(this.DATA_DIR,this.BOOK_FILE);
+        const books = readFileJSON<Book>(MyPaths.DATA_DIR,MyPaths.BOOK_FILE);
+      
+        if(!book.id){
+            book.id = books.length > 0 ? Math.max(...books.map(b => b.id)) + 1 : 1;
+        }
+        if(this.isBookExists(book.id,book.isbn)){
+            throw new Error('Book already exists');
+        }
         books.push(book);
-        writeFileJson(books,this.DATA_DIR,this.BOOK_FILE);
+        writeFileJSON(books,MyPaths.DATA_DIR,MyPaths.BOOK_FILE);
         return book;
     }
     
+
+    public static isBookExists(id: number, isbn: string): boolean {
+        const books = readFileJSON<Book>(MyPaths.DATA_DIR,MyPaths.BOOK_FILE);
+        return books.some(book => book.id === id || book.isbn === isbn);
+    }
+
+    public static getBooks(): any {
+        const books = readFileJSON<Book>(MyPaths.DATA_DIR,MyPaths.BOOK_FILE);
+        return books;
+    }
+
+    public static getBookById(id: number): Book | null {
+        const books = readFileJSON<Book>(MyPaths.DATA_DIR,MyPaths.BOOK_FILE);
+        return books.find(book => book.id === id) || null;
+    }
     
 }
