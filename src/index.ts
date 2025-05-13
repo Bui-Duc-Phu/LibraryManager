@@ -57,8 +57,7 @@ function addBook(){
     });
     
     const categoryChoice = askNonEmpty("Chọn số thứ tự thể loại sách: ", "number") as number;
-    const categoryIndex = categoryChoice - 1;
-    const selectedCategory = Object.values(BookCategory)[categoryIndex];
+    const selectedCategory = Object.values(BookCategory)[categoryChoice-1];
     
     const quantity = askNonEmpty("Nhập số lượng: ", "number") as number;
     const location = askNonEmpty("Nhập vị trí: ", "string") as string;
@@ -124,7 +123,7 @@ function returnBook(){
     showAllBook();
     const bookId = askNonEmpty("Nhập id sách: ", "number") as number;
     const userId = askNonEmpty("Nhập id người dùng: ", "number") as number;
-    
+
     LoanService.updateLoanStatus(userId, bookId, 'returned');
     console.log("Trả sách thành công\n");
     
